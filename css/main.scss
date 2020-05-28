@@ -1,0 +1,498 @@
+// General styling
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$white: rgb(255, 255, 255);
+$turquoise: rgb(0, 224, 208);
+$milk: rgb(194, 194, 194);
+$purple: rgb(65, 61, 75);
+
+body {
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1024px;
+  height: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+a.btn {
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $turquoise;
+  border-radius: 2px;
+  border: 1px $turquoise solid;
+
+  &:hover {
+    padding: 1rem 2rem;
+    color: $turquoise;
+    border: 1px $turquoise solid;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+// Header section
+#header {
+  position: relative;
+  background: linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+  height: 100vh;
+  padding-top: 0.5rem;
+
+  //overlay
+  &::before {
+    content: '';
+    background: url(../images/bg.png) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    opacity: 0.1;
+  }
+
+  #main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+
+    ul,
+    div {
+      display: flex;
+    }
+
+    li {
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 25px;
+      font-family: 'Roboto';
+      font-weight: lighter;
+      color: $turquoise;
+      margin-left: 8px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $white;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-family: 'Roboto';
+      padding: 5px;
+
+      &:hover,
+      &.current {
+        color: $turquoise;
+      }
+    }
+  }
+
+  #main {
+    position: relative;
+    text-align: center;
+    color: $white;
+    padding: 0 2rem;
+    margin-top: 10rem;
+
+    h1 {
+      text-transform: capitalize;
+    }
+
+    div.bottom-line {
+      background: $turquoise;
+      height: 2px;
+      width: 3rem;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      font-family: 'Roboto';
+      line-height: 1.714;
+      margin: 3rem;
+    }
+  }
+}
+
+// our story section
+#our-story {
+  margin: 2rem 0;
+  padding: 1rem 0;
+
+  .about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 1rem 0;
+
+    img {
+      position: relative;
+      left: 180px;
+      height: 250px;
+    }
+
+    .story-content {
+      h1 {
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #413d4b;
+        font-weight: bold;
+        line-height: 1.2;
+        height: 16px;
+      }
+
+      p {
+        font-size: 1rem;
+        color: rgba(65, 61, 75, 0.749);
+        line-height: 1.571;
+        margin: 30px 0;
+        padding-bottom: 1.1rem;
+      }
+    }
+  }
+}
+
+// video section
+#video {
+  position: relative;
+  background: linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+  height: 450px;
+  color: $white;
+
+  //overlay
+  &::before {
+    content: '';
+    background: url(../images/video-bg.png) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    opacity: 0.1;
+  }
+
+  .video-story {
+    text-align: center;
+    margin: 4rem 1rem;
+    padding: 3rem;
+
+    // video play image
+    .playbtn {
+      position: relative;
+      margin-top: 3rem;
+
+      #play {
+        position: absolute;
+        top: 25px;
+        left: 48.5%;
+      }
+    }
+
+    h2 {
+      font-size: 16px;
+      color: $white;
+      text-transform: uppercase;
+      margin: 2rem 0 1rem 0;
+    }
+  }
+}
+
+// expertise section
+#expertise {
+  margin: 2rem 0;
+
+  .title {
+    text-align: center;
+
+    h1 {
+      font-size: 22px;
+      text-transform: uppercase;
+      color: #413d4b;
+      font-weight: bold;
+      line-height: 1.2;
+      padding: 1rem;
+    }
+
+    p {
+      font-size: 16px;
+      color: rgba(47, 45, 53, 0.749);
+      line-height: 1.2;
+    }
+  }
+
+  div.bottom-line {
+    background-color: #413d4b;
+    height: 2px;
+    width: 3rem;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+    text-align: center;
+
+    .card {
+      padding: 1rem 0;
+      border-right: 1px solid rgba(128, 128, 128, 0.322);
+      border-bottom: 1px solid rgba(128, 128, 128, 0.322);
+
+      h2 {
+        font-size: 15px;
+        font-weight: bolder;
+        color: #413d4b;
+        text-transform: uppercase;
+        margin: 1rem 0 0 0;
+      }
+
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 0.749);
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+// team section
+#team {
+  position: relative;
+  background: linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+  height: 700px;
+  color: $white;
+  text-align: center;
+
+  //overlay
+  &::before {
+    content: '';
+    background: url(../images/team-bg.png) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    opacity: 0.1;
+  }
+
+  .title {
+    text-align: center;
+    margin: 2rem 0;
+
+    h1 {
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 1.2;
+      padding: 1rem;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  }
+
+  div.bottom-line {
+    background-color: #413d4b;
+    height: 2px;
+    width: 3rem;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 2rem;
+    padding: 1.5rem;
+
+    .card {
+      text-align: center;
+      border: 1px solid white;
+      padding-bottom: 1rem;
+
+      .card-img {
+        padding-bottom: 1rem;
+      }
+
+      h2 {
+        font-size: 13px;
+        font-family: 'Roboto';
+        color: rgba(250, 250, 250, 0.702);
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Roboto';
+        padding: 0;
+      }
+    }
+  }
+
+  #team-hire {
+    margin-top: 2rem;
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+// works section
+#works {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  text-align: center;
+
+  .our-works {
+    display: flex;
+    justify-content: space-around;
+
+    h1 {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      color: rgb(65, 61, 75);
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: rgb(65, 61, 75);
+      line-height: 1.2;
+      text-transform: capitalize;
+    }
+  }
+
+  .work-samples {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 3rem 0;
+    padding: 1rem 0;
+
+    .boxes {
+      background: grey;
+      height: 150px;
+      width: 100%;
+      border: 1px white solid;
+
+      &:nth-child(even) {
+        background: $milk;
+      }
+    }
+  }
+}
+
+// testimonial section
+#testimonial {
+  position: relative;
+  background: linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+  height: 600px;
+  padding-top: 2rem;
+  color: $white;
+  text-align: center;
+
+  //overlay
+  &::before {
+    content: '';
+    background: url(../images/testimonial-bg.png) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    opacity: 0.1;
+  }
+
+  img {
+    display: block;
+    margin: 1.5rem auto;
+    padding: 1rem 0;
+  }
+
+  p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.851);
+    line-height: 1.625;
+    text-align: center;
+    padding: 1rem 3rem;
+  }
+
+  .details {
+    margin: 0;
+    padding: 1rem;
+
+    h1 {
+      font-size: 1rem;
+      color: rgb(255, 255, 255);
+      line-height: 1.571;
+    }
+
+    p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.702);
+      line-height: 1.692;
+    }
+  }
+
+  .testimonial-images {
+    display: flex;
+    padding: 1rem auto;
+    margin: 1rem auto;
+    justify-content: center;
+    position: relative;
+
+    img {
+      width: 60px;
+      height: 60px;
+      padding: 0;
+      margin: 10px 5px;
+    }
+
+    span.arrow {
+      font-weight: bold;
+      font-size: 2rem;
+      color: $milk;
+      margin: 1rem 1.5rem;
+
+      .right {
+        position: absolute;
+        top: 50%;
+        left: 0;
+      }
+
+      .left {
+        position: absolute;
+        top: 50%;
+        right: 0;
+      }
+    }
+  }
+}
