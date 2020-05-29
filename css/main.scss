@@ -27,8 +27,8 @@ a {
   color: $white;
 }
 
-a.btn {
-  padding: 1rem 1.5rem;
+.btn {
+  padding: 1rem;
   text-transform: uppercase;
   font-weight: bold;
   color: $turquoise;
@@ -493,6 +493,217 @@ ul {
         top: 50%;
         right: 0;
       }
+    }
+  }
+}
+
+//contact section
+#contact {
+  margin: 2rem;
+  padding: 1.5rem;
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .contact-form {
+      h1 {
+        font-size: 22px;
+        color: rgb(65, 61, 75);
+        font-weight: bold;
+        line-height: 1.2;
+        text-transform: uppercase;
+      }
+
+      .form-group {
+        margin: 2rem 0;
+
+        .form-item {
+          margin: 2rem 0;
+
+          .text-input {
+            padding: 1rem;
+            width: 80%;
+            display: block;
+          }
+        }
+
+        button[type='submit'] {
+          padding: 0.5rem 2rem;
+          background: none;
+        }
+      }
+    }
+
+    .client-list {
+      h1 {
+        font-size: 22px;
+        color: rgb(65, 61, 75);
+        font-weight: bold;
+        line-height: 1.2;
+        text-transform: uppercase;
+      }
+
+      .logo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 1rem;
+
+        .clients {
+          width: 80%;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+//footer
+#footer {
+  position: relative;
+  background: linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+  height: 400px;
+  padding: 3rem 0;
+  color: $white;
+
+  //overlay
+  &::before {
+    content: '';
+    background: url(../images/footer-background.png) no-repeat center
+      center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    opacity: 0.1;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin: 1rem;
+
+    .footer-a {
+      .footer-logo {
+        display: flex;
+        color: $turquoise;
+
+        h1 {
+          margin-left: 10px;
+          font-size: 30px;
+          font-weight: lighter;
+          line-height: 1.2;
+          text-align: center;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        margin: 1.5rem 0;
+        color: rgb(255, 255, 255);
+        line-height: 1.857;
+        text-align: left;
+      }
+    }
+
+    .footer-b {
+      h1 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        line-height: 1.733;
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+
+      .address {
+        display: flex;
+        margin: 2rem 0 0 0;
+
+        img {
+          margin-right: 1rem;
+          height: 25px;
+        }
+      }
+
+      .phone {
+        display: flex;
+        margin: 2rem 0 0 0;
+
+        img {
+          margin-right: 1rem;
+          height: 20px;
+        }
+
+        p {
+          font-size: 1.1rem;
+          color: rgb(255, 255, 255);
+          line-height: 1.57;
+        }
+      }
+    }
+
+    .footer-c {
+      position: relative;
+
+      h1 {
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        line-height: 1.733;
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 1rem;
+      }
+
+      .form-group {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+
+        .text-input {
+          padding: 1rem;
+          background: none;
+          border: 1px $white solid;
+        }
+        .box {
+          background: $milk;
+          width: 80px;
+          border: none;
+
+          img {
+            display: block;
+            margin: 0.5rem auto;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 1rem 1rem 1rem 0;
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        line-height: 1.857;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      color: rgb(255, 255, 255);
+      line-height: 1.857;
+      text-align: center;
+      margin: 1rem;
     }
   }
 }
