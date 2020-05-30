@@ -133,12 +133,12 @@ ul {
   margin: 3rem;
 }
 
-#our-story {
+#about {
   margin: 2rem 0;
   padding: 1rem 0;
 }
 
-#our-story .about-content {
+#about .about-content {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -147,13 +147,13 @@ ul {
   margin: 1rem 0;
 }
 
-#our-story .about-content img {
+#about .about-content img {
   position: relative;
   left: 180px;
   height: 250px;
 }
 
-#our-story .about-content .story-content h1 {
+#about .about-content .story-content h1 {
   font-size: 22px;
   text-transform: uppercase;
   color: #413d4b;
@@ -162,7 +162,7 @@ ul {
   height: 16px;
 }
 
-#our-story .about-content .story-content p {
+#about .about-content .story-content p {
   font-size: 1rem;
   color: rgba(65, 61, 75, 0.749);
   line-height: 1.571;
