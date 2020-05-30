@@ -6,6 +6,7 @@
 }
 
 body {
+  font-family: 'Lato', sans-serif;
   line-height: 1.5;
 }
 
@@ -335,6 +336,7 @@ ul {
   text-align: center;
   border: 1px solid white;
   padding-bottom: 1rem;
+  z-index: 2;
 }
 
 #team .items .card .card-img {
@@ -356,6 +358,7 @@ ul {
 }
 
 #team #team-hire {
+  position: relative;
   margin-top: 2rem;
 }
 
@@ -514,6 +517,10 @@ ul {
       grid-template-columns: repeat(2, 1fr);
 }
 
+#contact .contact-grid .contact-form {
+  position: relative;
+}
+
 #contact .contact-grid .contact-form h1 {
   font-size: 22px;
   color: #413d4b;
@@ -601,7 +608,7 @@ ul {
 
 #footer .footer-content .footer-a .footer-logo h1 {
   margin-left: 10px;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: lighter;
   line-height: 1.2;
   text-align: center;
