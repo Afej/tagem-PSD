@@ -822,6 +822,7 @@ ul {
   }
   #header {
     padding-bottom: 1rem;
+    height: 90vh;
   }
   #header #main-nav {
     -webkit-box-orient: vertical;
