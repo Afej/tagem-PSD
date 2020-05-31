@@ -95,7 +95,6 @@ ul {
 
     h1 {
       font-size: 25px;
-      font-family: 'Roboto';
       font-weight: lighter;
       color: $turquoise;
       margin-left: 8px;
@@ -106,7 +105,6 @@ ul {
       color: $white;
       text-transform: uppercase;
       font-size: 15px;
-      font-family: 'Roboto';
       padding: 5px;
 
       &:hover,
@@ -137,9 +135,8 @@ ul {
 
     p {
       font-size: 20px;
-      font-weight: 500;
-      font-family: 'Roboto';
-      line-height: 1.714;
+      font-weight: 400;
+      line-height: 1.5;
       margin: 3rem;
     }
   }
@@ -345,7 +342,7 @@ ul {
 
     .card {
       text-align: center;
-      border: 1px solid white;
+      // border: 1px solid white;
       padding-bottom: 1rem;
       z-index: 2;
 
@@ -355,7 +352,6 @@ ul {
 
       h2 {
         font-size: 13px;
-        font-family: 'Roboto';
         color: rgba(250, 250, 250, 0.702);
         text-transform: uppercase;
       }
@@ -363,7 +359,6 @@ ul {
       p {
         font-size: 15px;
         font-weight: 500;
-        font-family: 'Roboto';
         padding: 0;
       }
     }
@@ -428,8 +423,8 @@ ul {
 #testimonial {
   position: relative;
   background: linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-  height: 600px;
-  padding-top: 2rem;
+  height: 520px;
+  // padding-top: 2rem;
   color: $white;
   text-align: center;
 
@@ -453,6 +448,7 @@ ul {
 
   p {
     font-size: 1rem;
+    font-weight: 550;
     color: rgba(255, 255, 255, 0.851);
     line-height: 1.625;
     text-align: center;
@@ -521,7 +517,7 @@ ul {
     grid-template-columns: repeat(2, 1fr);
 
     .contact-form {
-      position: relative;
+      // position: relative;
 
       h1 {
         font-size: 22px;
@@ -601,6 +597,7 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.2rem;
     margin: 1rem;
+    position: relative;
 
     .footer-a {
       .footer-logo {
@@ -663,8 +660,6 @@ ul {
     }
 
     .footer-c {
-      position: relative;
-
       h1 {
         font-size: 1rem;
         color: rgb(255, 255, 255);

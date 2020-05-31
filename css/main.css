@@ -86,7 +86,6 @@ ul {
 
 #header #main-nav h1 {
   font-size: 25px;
-  font-family: 'Roboto';
   font-weight: lighter;
   color: #00e0d0;
   margin-left: 8px;
@@ -97,7 +96,6 @@ ul {
   color: white;
   text-transform: uppercase;
   font-size: 15px;
-  font-family: 'Roboto';
   padding: 5px;
 }
 
@@ -127,9 +125,8 @@ ul {
 
 #header #main p {
   font-size: 20px;
-  font-weight: 500;
-  font-family: 'Roboto';
-  line-height: 1.714;
+  font-weight: 400;
+  line-height: 1.5;
   margin: 3rem;
 }
 
@@ -334,7 +331,6 @@ ul {
 
 #team .items .card {
   text-align: center;
-  border: 1px solid white;
   padding-bottom: 1rem;
   z-index: 2;
 }
@@ -345,7 +341,6 @@ ul {
 
 #team .items .card h2 {
   font-size: 13px;
-  font-family: 'Roboto';
   color: rgba(250, 250, 250, 0.702);
   text-transform: uppercase;
 }
@@ -353,7 +348,6 @@ ul {
 #team .items .card p {
   font-size: 15px;
   font-weight: 500;
-  font-family: 'Roboto';
   padding: 0;
 }
 
@@ -419,8 +413,7 @@ ul {
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, from(#09052f), to(#311d5e));
   background: linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-  height: 600px;
-  padding-top: 2rem;
+  height: 520px;
   color: white;
   text-align: center;
 }
@@ -444,6 +437,7 @@ ul {
 
 #testimonial p {
   font-size: 1rem;
+  font-weight: 550;
   color: rgba(255, 255, 255, 0.851);
   line-height: 1.625;
   text-align: center;
@@ -515,10 +509,6 @@ ul {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-}
-
-#contact .contact-grid .contact-form {
-  position: relative;
 }
 
 #contact .contact-grid .contact-form h1 {
@@ -597,6 +587,7 @@ ul {
       grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
   margin: 1rem;
+  position: relative;
 }
 
 #footer .footer-content .footer-a .footer-logo {
@@ -659,10 +650,6 @@ ul {
   font-size: 1.1rem;
   color: white;
   line-height: 1.57;
-}
-
-#footer .footer-content .footer-c {
-  position: relative;
 }
 
 #footer .footer-content .footer-c h1 {
@@ -730,5 +717,310 @@ ul {
   line-height: 1.857;
   text-align: center;
   margin: 1rem;
+}
+
+@media (max-width: 800px) {
+  #header {
+    height: 65vh;
+  }
+  #header #main-nav {
+    padding: 0rem;
+    margin: 1rem 0;
+  }
+  #header #main-nav a {
+    padding: 3px;
+  }
+  #header #main {
+    margin-top: 7rem;
+  }
+  #header #main h1 {
+    font-size: 1.5rem;
+  }
+  #header #main p {
+    font-size: 18px;
+  }
+  #about {
+    margin: 1rem 0;
+  }
+  #about .about-content img {
+    left: 50px;
+  }
+  #video .video-story .playbtn #play {
+    left: 47%;
+  }
+  #team {
+    height: 600px;
+  }
+  #team .items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  #team .items .card {
+    width: 150px;
+  }
+  #team .items .card .card-img img {
+    width: 100%;
+  }
+  #team #team-hire {
+    margin-top: 1rem;
+  }
+  #footer {
+    padding: 0.5rem 0;
+  }
+  #footer .footer-content {
+    gap: 1.4rem;
+  }
+  #footer .footer-content .footer-a p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+  #footer .footer-content .footer-b .address img {
+    height: 20px;
+  }
+  #footer .footer-content .footer-b .address p {
+    line-height: 1.4;
+  }
+  #footer .footer-content .footer-b .phone p {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.57;
+  }
+  #footer .footer-content .footer-c .form-group .text-input {
+    padding: 0.5rem;
+    background: none;
+  }
+  #footer .footer-content .footer-c .form-group .box {
+    width: 60px;
+  }
+  #footer .footer-content .footer-c img {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    padding: 0.5rem;
+    font-weight: lighter;
+  }
+  .btn:hover {
+    padding: 1rem;
+  }
+  #header {
+    padding-bottom: 1rem;
+  }
+  #header #main-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: 0.5rem 0 0 0;
+  }
+  #header #main-nav div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header #main-nav a {
+    font-size: 12px;
+    padding: 0.2rem;
+  }
+  #header #main-nav ul {
+    margin-top: 0.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header #main-nav li:first-child {
+    display: none;
+  }
+  #header #main {
+    margin-top: 3rem;
+    padding: 0 0 1rem 0;
+  }
+  #header #main h1 {
+    font-size: 1.2rem;
+    word-spacing: 1px;
+  }
+  #header #main p {
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.2;
+    margin: 2rem 0;
+  }
+  #about .about-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+  #about .about-content img {
+    height: 200px;
+    left: 20%;
+  }
+  #about .about-content .story-content {
+    font-weight: bold;
+  }
+  #video .video-story .playbtn #play {
+    left: 43%;
+  }
+  #expertise .items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    margin-bottom: 0;
+  }
+  #expertise .items .card h2 {
+    padding: 0 0.5rem;
+  }
+  #expertise .items .card p {
+    display: none;
+  }
+  #team {
+    height: 700px;
+  }
+  #team .title {
+    margin: 1rem 0 0 0;
+  }
+  #team .title h1 {
+    font-size: 1rem;
+  }
+  #team .items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin-top: 0;
+  }
+  #team .items .card {
+    width: 100px;
+    margin-left: 1.2rem;
+  }
+  #team .items .card .card-img img {
+    width: 100%;
+  }
+  #team #team-hire {
+    margin-top: 0;
+  }
+  #team #team-hire p {
+    line-height: 1.2;
+    font-size: 0.9rem;
+  }
+  #works {
+    padding: 0;
+  }
+  #works .our-works h1,
+  #works .our-works p {
+    font-size: 1rem;
+  }
+  #works .work-samples {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    margin: 1rem 0;
+  }
+  #works .work-samples .boxes {
+    height: 100px;
+  }
+  #testimonial img {
+    margin: 0.5rem auto;
+  }
+  #testimonial p {
+    padding: 0;
+  }
+  #testimonial .testimonial-images {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #testimonial .testimonial-images img {
+    width: 40px;
+    height: 40px;
+  }
+  #testimonial .testimonial-images span.arrow {
+    margin: 1rem 0.5rem;
+  }
+  #contact {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  #contact .contact-grid {
+    padding: 0 1rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  #contact .contact-grid .contact-form {
+    border-bottom: 2px gray dotted;
+  }
+  #contact .contact-grid .contact-form > .form-group > .form-item {
+    margin: 1rem 0;
+  }
+  #contact .contact-grid .contact-form > .form-group > .form-item .text-input {
+    width: 100%;
+  }
+  #contact .contact-grid .client-list {
+    margin-top: 1rem;
+  }
+  #contact .contact-grid .client-list .logo {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  #footer {
+    padding: 1rem 0;
+  }
+  #footer .footer-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 0;
+    margin: 0.5rem 0;
+  }
+  #footer .footer-content .footer-a {
+    display: none;
+  }
+  #footer .footer-content .footer-b h1 {
+    margin: 0;
+    text-align: center;
+  }
+  #footer .footer-content .footer-b .address,
+  #footer .footer-content .footer-b .phone {
+    margin: 0.5rem 0;
+  }
+  #footer .footer-content .footer-c h1 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  #footer .footer-content .footer-c .form-group {
+    margin: 1rem 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #footer .footer-content .footer-c img {
+    display: block;
+    margin: 1rem auto;
+    height: 30px;
+  }
+  #footer .copyright {
+    margin: -20px 0 0 0;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer .copyright ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #footer .copyright p {
+    line-height: 1.5;
+    margin: -5px 0 0 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

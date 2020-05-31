@@ -1,0 +1,395 @@
+// tablets and smaller screens
+@media (max-width: 800px) {
+  #header {
+    height: 65vh;
+    #main-nav {
+      padding: 0rem;
+      margin: 1rem 0;
+
+      a {
+        padding: 3px;
+      }
+    }
+
+    #main {
+      margin-top: 7rem;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  #about {
+    margin: 1rem 0;
+    .about-content {
+      img {
+        left: 50px;
+      }
+    }
+  }
+
+  #video {
+    .video-story {
+      // video play image
+      .playbtn {
+        #play {
+          left: 47%;
+        }
+      }
+    }
+  }
+
+  #team {
+    height: 600px;
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 2rem;
+      // padding: 0 0 0 10px;
+      text-align: center;
+
+      .card {
+        width: 150px;
+        .card-img {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    #team-hire {
+      margin-top: 1rem;
+    }
+  }
+
+  #footer {
+    padding: 0.5rem 0;
+
+    .footer-content {
+      gap: 1.4rem;
+
+      .footer-a {
+        p {
+          font-size: 1rem;
+          margin: 1rem 0;
+          line-height: 1.5;
+        }
+      }
+
+      .footer-b {
+        .address {
+          img {
+            height: 20px;
+          }
+
+          p {
+            line-height: 1.4;
+          }
+        }
+
+        .phone {
+          p {
+            font-size: 1rem;
+            color: rgb(255, 255, 255);
+            line-height: 1.57;
+          }
+        }
+      }
+
+      .footer-c {
+        .form-group {
+          .text-input {
+            padding: 0.5rem;
+            background: none;
+          }
+          .box {
+            width: 60px;
+          }
+        }
+
+        img {
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+// smartphones
+@media (max-width: 500px) {
+  .btn {
+    padding: 0.5rem;
+    font-weight: lighter;
+
+    &:hover {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    padding-bottom: 1rem;
+
+    #main-nav {
+      flex-direction: column;
+      text-align: center;
+      margin: 0.5rem 0 0 0;
+
+      div {
+        // align-items: center;
+        justify-content: center;
+      }
+
+      a {
+        font-size: 12px;
+        padding: 0.2rem;
+      }
+
+      ul {
+        margin-top: 0.5rem;
+        justify-content: center;
+      }
+      li {
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+
+    #main {
+      margin-top: 3rem;
+      padding: 0 0 1rem 0;
+
+      h1 {
+        font-size: 1.2rem;
+        word-spacing: 1px;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: lighter;
+        line-height: 1.2;
+        margin: 2rem 0;
+      }
+    }
+  }
+
+  #about {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      text-align: center;
+
+      img {
+        height: 200px;
+        left: 20%;
+      }
+
+      .story-content {
+        font-weight: bold;
+      }
+    }
+  }
+
+  #video {
+    .video-story {
+      // video play image
+      .playbtn {
+        #play {
+          left: 43%;
+        }
+      }
+    }
+  }
+
+  #expertise {
+    .items {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0;
+      margin-bottom: 0;
+      // gap: 1.2rem;
+
+      .card {
+        h2 {
+          padding: 0 0.5rem;
+        }
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #team {
+    height: 700px;
+
+    .title {
+      margin: 1rem 0 0 0;
+      h1 {
+        font-size: 1rem;
+      }
+    }
+
+    .items {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 0;
+
+      .card {
+        width: 100px;
+        margin-left: 1.2rem;
+        .card-img {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    #team-hire {
+      margin-top: 0;
+
+      p {
+        line-height: 1.2;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  #works {
+    padding: 0;
+    .our-works {
+      h1,
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .work-samples {
+      grid-template-columns: repeat(4, 1fr);
+      margin: 1rem 0;
+      .boxes {
+        height: 100px;
+      }
+    }
+  }
+
+  #testimonial {
+    // padding-top: 0;
+
+    img {
+      margin: 0.5rem auto;
+    }
+    p {
+      // font-size: 0.9rem;
+      padding: 0;
+    }
+
+    .testimonial-images {
+      align-items: center;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+
+      span.arrow {
+        margin: 1rem 0.5rem;
+      }
+    }
+  }
+
+  #contact {
+    margin: 1rem 0;
+    padding: 1rem;
+
+    .contact-grid {
+      padding: 0 1rem;
+      grid-template-columns: 1fr;
+      // text-align: center;
+      gap: 10px;
+
+      .contact-form {
+        border-bottom: 2px gray dotted;
+      }
+
+      .contact-form > .form-group > .form-item {
+        margin: 1rem 0;
+
+        .text-input {
+          width: 100%;
+        }
+      }
+
+      .client-list {
+        margin-top: 1rem;
+
+        .logo {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    }
+  }
+
+  #footer {
+    padding: 1rem 0;
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 0;
+      margin: 0.5rem 0;
+
+      .footer-a {
+        display: none;
+      }
+
+      .footer-b {
+        h1 {
+          margin: 0;
+          text-align: center;
+        }
+
+        .address,
+        .phone {
+          margin: 0.5rem 0;
+        }
+      }
+
+      .footer-c {
+        h1 {
+          margin-bottom: 0;
+          text-align: center;
+        }
+
+        .form-group {
+          margin: 1rem 0;
+          justify-content: space-around;
+        }
+
+        img {
+          display: block;
+          margin: 1rem auto;
+          height: 30px;
+        }
+      }
+    }
+
+    .copyright {
+      margin: -20px 0 0 0;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      ul {
+        justify-content: space-evenly;
+      }
+
+      p {
+        line-height: 1.5;
+        margin: -5px 0 0 0;
+      }
+    }
+  }
+}
