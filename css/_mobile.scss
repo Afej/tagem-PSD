@@ -69,6 +69,18 @@
     }
   }
 
+  #contact {
+    padding: 0.5rem;
+
+    .contact-grid {
+      gap: 10px;
+
+      .contact-form > .form-group > .form-item > .text-input {
+        width: 90%;
+      }
+    }
+  }
+
   #footer {
     padding: 0.5rem 0;
 
@@ -135,6 +147,7 @@
 
   #header {
     padding-bottom: 1rem;
+    // height: 60vh;
 
     #main-nav {
       flex-direction: column;
@@ -366,7 +379,12 @@
 
         .form-group {
           margin: 1rem 0;
-          justify-content: space-around;
+          justify-content: space-between;
+
+          .text-input {
+            width: 80%;
+            margin-right: 10px;
+          }
         }
 
         img {

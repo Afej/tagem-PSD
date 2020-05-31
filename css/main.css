@@ -769,6 +769,15 @@ ul {
   #team #team-hire {
     margin-top: 1rem;
   }
+  #contact {
+    padding: 0.5rem;
+  }
+  #contact .contact-grid {
+    gap: 10px;
+  }
+  #contact .contact-grid .contact-form > .form-group > .form-item > .text-input {
+    width: 90%;
+  }
   #footer {
     padding: 0.5rem 0;
   }
@@ -995,8 +1004,13 @@ ul {
   }
   #footer .footer-content .footer-c .form-group {
     margin: 1rem 0;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #footer .footer-content .footer-c .form-group .text-input {
+    width: 80%;
+    margin-right: 10px;
   }
   #footer .footer-content .footer-c img {
     display: block;
