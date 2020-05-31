@@ -839,6 +839,7 @@ ul {
   }
   #header #main-nav a {
     font-size: 12px;
+    font-weight: 550;
     padding: 0.2rem;
   }
   #header #main-nav ul {
