@@ -52,7 +52,7 @@ ul {
 
 #header::before {
   content: '';
-  background: url(../images/bg.png) no-repeat center center/cover;
+  background: url(../images/bg-min.png) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -177,7 +177,7 @@ ul {
 
 #video::before {
   content: '';
-  background: url(../images/video-bg.png) no-repeat center center/cover;
+  background: url(../images/video-bg-min.png) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -284,7 +284,7 @@ ul {
 
 #team::before {
   content: '';
-  background: url(../images/team-bg.png) no-repeat center center/cover;
+  background: url(../images/team-bg-min.png) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -420,7 +420,7 @@ ul {
 
 #testimonial::before {
   content: '';
-  background: url(../images/testimonial-bg.png) no-repeat center center/cover;
+  background: url(../images/testimonial-bg-min.png) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -571,7 +571,7 @@ ul {
 
 #footer::before {
   content: '';
-  background: url(../images/footer-background.png) no-repeat center center/cover;
+  background: url(../images/footer-background-min.png) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
