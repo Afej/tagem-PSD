@@ -851,8 +851,8 @@ ul {
     display: none;
   }
   #header #main {
-    margin-top: 3rem;
-    padding: 0 0 1rem 0;
+    margin-top: 6rem;
+    padding: 1rem 0;
   }
   #header #main h1 {
     font-size: 1.2rem;
@@ -862,7 +862,7 @@ ul {
     font-size: 1rem;
     font-weight: lighter;
     line-height: 1.2;
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
   #about .about-content {
     -ms-grid-columns: 1fr;
