@@ -50,6 +50,57 @@ ul {
   list-style: none;
 }
 
+#nav-wrapper {
+  background: #3f2d67;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#nav-wrapper #main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav-wrapper #main-nav ul,
+#nav-wrapper #main-nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#nav-wrapper #main-nav li {
+  cursor: pointer;
+}
+
+#nav-wrapper #main-nav h1 {
+  font-size: 25px;
+  font-weight: lighter;
+  color: #00e0d0;
+  margin-left: 8px;
+}
+
+#nav-wrapper #main-nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 5px;
+}
+
+#nav-wrapper #main-nav a:hover, #nav-wrapper #main-nav a.current {
+  color: #00e0d0;
+}
+
 #header {
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, from(#09052f), to(#311d5e));
@@ -60,55 +111,13 @@ ul {
 
 #header::before {
   content: '';
-  background: url(../images/bg-min.webp) no-repeat center center/cover;
+  background: url(../images/bg-min.png) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
   height: inherit;
   width: 100%;
   opacity: 0.1;
-}
-
-#header #main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1rem;
-  margin: 1rem;
-  position: relative;
-}
-
-#header #main-nav ul,
-#header #main-nav div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#header #main-nav li {
-  cursor: pointer;
-}
-
-#header #main-nav h1 {
-  font-size: 25px;
-  font-weight: lighter;
-  color: #00e0d0;
-  margin-left: 8px;
-}
-
-#header #main-nav a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-size: 15px;
-  padding: 5px;
-}
-
-#header #main-nav a:hover, #header #main-nav a.current {
-  color: #00e0d0;
 }
 
 #header #main {
@@ -190,7 +199,7 @@ ul {
 
 #video::before {
   content: '';
-  background: url(../images/video-bg-min.webp) no-repeat center center/cover;
+  background: url(../images/video-bg-min.png) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -297,7 +306,7 @@ ul {
 
 #team::before {
   content: '';
-  background: url(../images/team-bg-min.webp) no-repeat center center/cover;
+  background: url(../images/team-bg-min.png) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -438,7 +447,7 @@ ul {
 
 #testimonial::before {
   content: '';
-  background: url(../images/testimonial-bg-min.webp) no-repeat center center/cover;
+  background: url(../images/testimonial-bg-min.png) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -589,7 +598,7 @@ ul {
 
 #footer::before {
   content: '';
-  background: url(../images/footer-bg-min.webp) no-repeat center center/cover;
+  background: url(../images/footer-background-min.png) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -738,15 +747,15 @@ ul {
 }
 
 @media (max-width: 800px) {
-  #header {
-    height: 65vh;
-  }
-  #header #main-nav {
+  #nav-wrapper #main-nav {
     padding: 0rem;
     margin: 1rem 0;
   }
-  #header #main-nav a {
+  #nav-wrapper #main-nav a {
     padding: 3px;
+  }
+  #header {
+    height: 65vh;
   }
   #header #main {
     margin-top: 7rem;
@@ -838,11 +847,7 @@ ul {
   .btn:hover {
     padding: 1rem;
   }
-  #header {
-    padding-bottom: 1rem;
-    height: 90vh;
-  }
-  #header #main-nav {
+  #nav-wrapper #main-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -850,24 +855,25 @@ ul {
     text-align: center;
     margin: 0.5rem 0 0 0;
   }
-  #header #main-nav div {
+  #nav-wrapper #main-nav div {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #header #main-nav a {
+  #nav-wrapper #main-nav a {
     font-size: 12px;
     font-weight: 550;
     padding: 0.2rem;
   }
-  #header #main-nav ul {
+  #nav-wrapper #main-nav ul {
     margin-top: 0.5rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #header #main-nav li:first-child {
-    display: none;
+  #header {
+    padding-bottom: 1rem;
+    height: 90vh;
   }
   #header #main {
     margin-top: 6rem;
@@ -961,6 +967,7 @@ ul {
     padding: 0;
   }
   #testimonial .testimonial-images {
+    margin-top: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

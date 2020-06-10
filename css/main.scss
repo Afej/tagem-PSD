@@ -33,17 +33,6 @@ body {
   overflow: hidden;
 }
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-family: 'Staatliches', cursive;
-//   margin-bottom: 0.55rem;
-//   line-height: 1.3;
-// }
-
 a {
   text-decoration: none;
   color: $white;
@@ -68,31 +57,17 @@ ul {
   list-style: none;
 }
 
-// Header section
-#header {
-  position: relative;
-  background: linear-gradient(0deg, #09052f 0%, #311d5e 100%);
-  height: 100vh;
-  padding-top: 0.5rem;
-
-  //overlay
-  &::before {
-    content: '';
-    background: url(../images/bg-min.webp) no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: inherit;
-    width: 100%;
-    opacity: 0.1;
-  }
+#nav-wrapper {
+  background: rgb(63, 45, 103);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
   #main-nav {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    margin: 1rem;
-    position: relative;
+    align-items: center;
 
     ul,
     div {
@@ -122,6 +97,26 @@ ul {
         color: $turquoise;
       }
     }
+  }
+}
+
+// Header section
+#header {
+  position: relative;
+  background: linear-gradient(0deg, #09052f 0%, #311d5e 100%);
+  height: 100vh;
+  padding-top: 0.5rem;
+
+  //overlay
+  &::before {
+    content: '';
+    background: url(../images/bg-min.png) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    opacity: 0.1;
   }
 
   #main {
@@ -205,7 +200,7 @@ ul {
   //overlay
   &::before {
     content: '';
-    background: url(../images/video-bg-min.webp) no-repeat center center/cover;
+    background: url(../images/video-bg-min.png) no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -313,7 +308,7 @@ ul {
   //overlay
   &::before {
     content: '';
-    background: url(../images/team-bg-min.webp) no-repeat center center/cover;
+    background: url(../images/team-bg-min.png) no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -451,7 +446,7 @@ ul {
   //overlay
   &::before {
     content: '';
-    background: url(../images/testimonial-bg-min.webp) no-repeat center
+    background: url(../images/testimonial-bg-min.png) no-repeat center
       center/cover;
     position: absolute;
     top: 0;
@@ -603,7 +598,8 @@ ul {
   //overlay
   &::before {
     content: '';
-    background: url(../images/footer-bg-min.webp) no-repeat center center/cover;
+    background: url(../images/footer-background-min.png) no-repeat center
+      center/cover;
     position: absolute;
     top: 0;
     left: 0;
