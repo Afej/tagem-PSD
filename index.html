@@ -7,7 +7,8 @@
     <title>Creative Agency</title>
     <link rel="stylesheet" href="css/main.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato|Staatliches"
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Lato|Staatliches&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -272,41 +273,45 @@
           <h1>Give us a good news</h1>
           <form class="form-group">
             <div class="form-item">
-              <label for="name"></label>
-              <input
-                type="text"
-                name="name"
-                class="text-input"
-                placeholder="Name"
-              />
+              <label>
+                <input
+                  type="text"
+                  name="name"
+                  class="text-input"
+                  placeholder="Name"
+                />
+              </label>
             </div>
             <div class="form-item">
-              <label for="email"></label>
-              <input
-                type="email"
-                name="email"
-                class="text-input"
-                placeholder="Email"
-              />
+              <label>
+                <input
+                  type="email"
+                  name="email"
+                  class="text-input"
+                  placeholder="Email"
+                />
+              </label>
             </div>
             <div class="form-item">
-              <label for="subject"></label>
-              <input
-                type="text"
-                name="subject"
-                class="text-input"
-                placeholder="Subject"
-              />
+              <label>
+                <input
+                  type="text"
+                  name="subject"
+                  class="text-input"
+                  placeholder="Subject"
+                />
+              </label>
             </div>
             <div class="form-item">
-              <label for="textarea"></label>
-              <textarea
-                name="message"
-                class="text-input"
-                cols="50"
-                rows="10"
-                placeholder="Your Message"
-              ></textarea>
+              <label>
+                <textarea
+                  name="message"
+                  class="text-input"
+                  cols="50"
+                  rows="10"
+                  placeholder="Your Message"
+                ></textarea>
+              </label>
             </div>
             <button type="submit" class="btn" disabled>Submit</button>
           </form>
