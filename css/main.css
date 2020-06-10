@@ -167,6 +167,11 @@ ul {
   padding-bottom: 1.1rem;
 }
 
+#about .about-content .story-content a {
+  background-color: #00e0d0;
+  color: white;
+}
+
 #video {
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, from(#09052f), to(#311d5e));
@@ -407,6 +412,11 @@ ul {
 
 #works .work-samples .boxes:nth-child(even) {
   background: #c2c2c2;
+}
+
+#works a {
+  background-color: #00e0d0;
+  color: white;
 }
 
 #testimonial {
