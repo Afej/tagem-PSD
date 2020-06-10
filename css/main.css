@@ -10,6 +10,14 @@ body {
   line-height: 1.5;
 }
 
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pacifico Regular"), local("Pacifico-Regular"), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format("woff2");
+  font-display: swap;
+}
+
 .container {
   max-width: 1024px;
   height: 100%;
@@ -52,7 +60,7 @@ ul {
 
 #header::before {
   content: '';
-  background: url(../images/bg-min.png) no-repeat center center/cover;
+  background: url(../images/bg-min.webp) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -182,7 +190,7 @@ ul {
 
 #video::before {
   content: '';
-  background: url(../images/video-bg-min.png) no-repeat center center/cover;
+  background: url(../images/video-bg-min.webp) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -289,7 +297,7 @@ ul {
 
 #team::before {
   content: '';
-  background: url(../images/team-bg-min.png) no-repeat center center/cover;
+  background: url(../images/team-bg-min.webp) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -430,7 +438,7 @@ ul {
 
 #testimonial::before {
   content: '';
-  background: url(../images/testimonial-bg-min.png) no-repeat center center/cover;
+  background: url(../images/testimonial-bg-min.webp) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -581,7 +589,7 @@ ul {
 
 #footer::before {
   content: '';
-  background: url(../images/footer-background-min.png) no-repeat center center/cover;
+  background: url(../images/footer-bg-min.webp) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
