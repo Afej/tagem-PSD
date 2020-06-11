@@ -3,6 +3,10 @@
   #nav-wrapper {
     padding: 1rem 2rem;
 
+    #logo {
+      padding: 0.5rem 0;
+    }
+
     a {
       padding: 3px;
     }
@@ -134,7 +138,9 @@
   }
 }
 
-// smartphones
+/////////////////
+/////////////////
+// smartphones //
 @media (max-width: 500px) {
   .btn {
     padding: 0.5rem;
