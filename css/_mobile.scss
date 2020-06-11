@@ -1,13 +1,10 @@
 // tablets and smaller screens
 @media (max-width: 800px) {
   #nav-wrapper {
-    #main-nav {
-      padding: 0rem;
-      margin: 1rem 0;
+    padding: 1rem 2rem;
 
-      a {
-        padding: 3px;
-      }
+    a {
+      padding: 3px;
     }
   }
 
@@ -15,7 +12,7 @@
     height: 65vh;
 
     #main {
-      margin-top: 7rem;
+      margin-top: 5rem;
 
       h1 {
         font-size: 1.5rem;
@@ -149,31 +146,70 @@
   }
 
   #nav-wrapper {
-    #main-nav {
+    // position: relative;
+    padding: 0.5rem 1.2rem;
+
+    .hamburger {
+      display: flex;
       flex-direction: column;
-      text-align: center;
-      margin: 0.5rem 0 0 0;
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 1;
 
-      div {
-        // align-items: center;
-        justify-content: center;
+      .line {
+        width: 40px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+      }
+    }
+
+    .nav-links {
+      position: fixed;
+      background: rgba(63, 45, 103, 1);
+      height: 70vh;
+      width: 100%;
+      top: 0;
+      right: 0;
+      flex-direction: column;
+      clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(100px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        opacity: 0;
+
+        &:nth-child(even) {
+          transition: all 0.5s ease 0.2s;
+        }
+
+        &:nth-child(odd) {
+          transition: all 0.5s ease 0.4s;
+        }
+
+        a {
+          font-size: 12px;
+          font-weight: 550;
+          padding: 0.2rem;
+        }
       }
 
-      a {
-        font-size: 12px;
-        font-weight: 550;
-        padding: 0.2rem;
-      }
+      &.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
 
-      ul {
-        margin-top: 0.5rem;
-        justify-content: center;
+        li.fade {
+          margin-top: 2rem;
+          opacity: 1;
+        }
       }
-      // li {
-      //   &:first-child {
-      //     display: none;
-      //   }
-      // }
     }
   }
 

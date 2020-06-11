@@ -15,23 +15,26 @@
 
   <body>
     <nav id="nav-wrapper">
-      <div class="container">
-        <div id="main-nav">
-          <div>
-            <img src="images/logo-min.png" alt="logo" id="logo" />
-            <h1>tajam</h1>
-          </div>
-          <ul>
-            <!-- <li><a href="#header" class="current">Home</a></li> -->
-            <!-- <li><a href="#about">about</a></li> -->
-            <li><a href="#expertise">expertise</a></li>
-            <li><a href="#team">teams</a></li>
-            <li><a href="#works">works</a></li>
-            <li><a href="#testimonial">Testimonials</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
-        </div>
+      <a href="#header" id="logo">
+        <img src="images/logo-min.png" alt="logo" />
+        <h1>tajam</h1>
+      </a>
+
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
+
+      <ul class="nav-links">
+        <!-- <li><a href="#header" class="current">Home</a></li> -->
+        <li><a href="#about">about</a></li>
+        <li><a href="#expertise">expertise</a></li>
+        <li><a href="#team">teams</a></li>
+        <li><a href="#works">works</a></li>
+        <li><a href="#testimonial">Testimonials</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
     </nav>
 
     <header id="header">
@@ -277,45 +280,41 @@
           <h1>Give us a good news</h1>
           <form class="form-group">
             <div class="form-item">
-              <label>
-                <input
-                  type="text"
-                  name="name"
-                  class="text-input"
-                  placeholder="Name"
-                />
-              </label>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                class="text-input"
+                placeholder="Name"
+              />
             </div>
             <div class="form-item">
-              <label>
-                <input
-                  type="email"
-                  name="email"
-                  class="text-input"
-                  placeholder="Email"
-                />
-              </label>
+              <label for="name">Email</label>
+              <input
+                type="email"
+                name="email"
+                class="text-input"
+                placeholder="Email"
+              />
             </div>
             <div class="form-item">
-              <label>
-                <input
-                  type="text"
-                  name="subject"
-                  class="text-input"
-                  placeholder="Subject"
-                />
-              </label>
+              <label for="name">Subject</label>
+              <input
+                type="text"
+                name="subject"
+                class="text-input"
+                placeholder="Subject"
+              />
             </div>
             <div class="form-item">
-              <label>
-                <textarea
-                  name="message"
-                  class="text-input"
-                  cols="50"
-                  rows="10"
-                  placeholder="Your Message"
-                ></textarea>
-              </label>
+              <label for="name">Message</label>
+              <textarea
+                name="message"
+                class="text-input"
+                cols="50"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
             </div>
             <button type="submit" class="btn" disabled>Submit</button>
           </form>

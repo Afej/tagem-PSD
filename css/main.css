@@ -19,16 +19,19 @@ body {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 85vw;
   height: 100%;
   margin: auto;
-  padding: 0 2rem;
   overflow: hidden;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+label {
+  display: none;
 }
 
 .btn {
@@ -51,45 +54,42 @@ ul {
 }
 
 #nav-wrapper {
-  background: #3f2d67;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-#nav-wrapper #main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  background: #3f2d67;
+  top: 0;
+  z-index: 1;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem 5rem;
 }
 
-#nav-wrapper #main-nav ul,
-#nav-wrapper #main-nav div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#nav-wrapper #main-nav li {
-  cursor: pointer;
-}
-
-#nav-wrapper #main-nav h1 {
+#nav-wrapper h1 {
   font-size: 25px;
   font-weight: lighter;
   color: #00e0d0;
   margin-left: 8px;
 }
 
-#nav-wrapper #main-nav a {
+#nav-wrapper #logo,
+#nav-wrapper .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#nav-wrapper li {
+  cursor: pointer;
+}
+
+#nav-wrapper li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -97,7 +97,7 @@ ul {
   padding: 5px;
 }
 
-#nav-wrapper #main-nav a:hover, #nav-wrapper #main-nav a.current {
+#nav-wrapper li a:hover, #nav-wrapper li a.current, #nav-wrapper li a:active {
   color: #00e0d0;
 }
 
@@ -747,18 +747,17 @@ ul {
 }
 
 @media (max-width: 800px) {
-  #nav-wrapper #main-nav {
-    padding: 0rem;
-    margin: 1rem 0;
+  #nav-wrapper {
+    padding: 1rem 2rem;
   }
-  #nav-wrapper #main-nav a {
+  #nav-wrapper a {
     padding: 3px;
   }
   #header {
     height: 65vh;
   }
   #header #main {
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
   #header #main h1 {
     font-size: 1.5rem;
@@ -847,29 +846,78 @@ ul {
   .btn:hover {
     padding: 1rem;
   }
-  #nav-wrapper #main-nav {
+  #nav-wrapper {
+    padding: 0.5rem 1.2rem;
+  }
+  #nav-wrapper .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
-    margin: 0.5rem 0 0 0;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    -webkit-transform: translate(-5%, -50%);
+            transform: translate(-5%, -50%);
+    z-index: 1;
   }
-  #nav-wrapper #main-nav div {
+  #nav-wrapper .hamburger .line {
+    width: 40px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  #nav-wrapper .nav-links {
+    position: fixed;
+    background: #3f2d67;
+    height: 70vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    pointer-events: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #nav-wrapper #main-nav a {
+  #nav-wrapper .nav-links li {
+    opacity: 0;
+  }
+  #nav-wrapper .nav-links li:nth-child(even) {
+    -webkit-transition: all 0.5s ease 0.2s;
+    transition: all 0.5s ease 0.2s;
+  }
+  #nav-wrapper .nav-links li:nth-child(odd) {
+    -webkit-transition: all 0.5s ease 0.4s;
+    transition: all 0.5s ease 0.4s;
+  }
+  #nav-wrapper .nav-links li a {
     font-size: 12px;
     font-weight: 550;
     padding: 0.2rem;
   }
-  #nav-wrapper #main-nav ul {
-    margin-top: 0.5rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  #nav-wrapper .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  #nav-wrapper .nav-links.open li.fade {
+    margin-top: 2rem;
+    opacity: 1;
   }
   #header {
     padding-bottom: 1rem;

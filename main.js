@@ -7,8 +7,20 @@ window.addEventListener('scroll', function () {
   }
 });
 
+//nav bar
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+  links.forEach((link) => {
+    link.classList.toggle('fade');
+  });
+});
+
 // Smooth Scrolling
-$('#main-nav a, .btn').on('click', function (event) {
+$('#nav-wrapper a, .btn').on('click', function (event) {
   if (this.hash !== '') {
     event.preventDefault();
 

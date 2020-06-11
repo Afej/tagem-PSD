@@ -26,16 +26,20 @@ body {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 85vw;
   height: 100%;
   margin: auto;
-  padding: 0 2rem;
+  // padding: 0 2rem;
   overflow: hidden;
 }
 
 a {
   text-decoration: none;
   color: $white;
+}
+
+label {
+  display: none;
 }
 
 .btn {
@@ -58,32 +62,29 @@ ul {
 }
 
 #nav-wrapper {
-  background: rgb(63, 45, 103);
+  display: flex;
   position: sticky;
+  background: rgb(63, 45, 103);
   top: 0;
   z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
 
-  #main-nav {
+  h1 {
+    font-size: 25px;
+    font-weight: lighter;
+    color: $turquoise;
+    margin-left: 8px;
+  }
+
+  #logo,
+  .nav-links {
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    align-items: center;
+  }
 
-    ul,
-    div {
-      display: flex;
-    }
-
-    li {
-      cursor: pointer;
-    }
-
-    h1 {
-      font-size: 25px;
-      font-weight: lighter;
-      color: $turquoise;
-      margin-left: 8px;
-    }
+  li {
+    cursor: pointer;
 
     a {
       text-decoration: none;
@@ -93,7 +94,8 @@ ul {
       padding: 5px;
 
       &:hover,
-      &.current {
+      &.current,
+      &:active {
         color: $turquoise;
       }
     }
